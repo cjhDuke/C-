@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    double a,b,c,x1,x2,d;
+    scanf("%lf%lf%lf",&a,&b,&c);
+    d=b*b-4*a*c;
+    if(a==0)
+    {
+        if(b==0)
+        {
+            if(c==0)
+            {
+                printf("此方程有任意解");
+            }
+            else
+            {
+                printf("此方程无解");
+            }
+        }
+        else
+        {
+            printf("此方程解为：%lf",-c/b);
+        }
+    }
+    else
+    {
+        printf("x1=%lf\n",(-b+sqrt(fabs(d)))/2/a);
+        printf("x2=%lf\n",(-b-sqrt(fabs(d)))/2/a);
+    }
+}
