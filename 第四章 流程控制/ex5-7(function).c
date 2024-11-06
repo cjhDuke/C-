@@ -16,7 +16,7 @@ float wozuishuai(int n,int depth);
     }
     else
     {
-      return sqrt(n-depth+1+wozuishuai(n-1,n-1));
+      return sqrt(n-depth+1+wozuishuai(n,depth-1));
     }
  }
 
